@@ -9,7 +9,7 @@
     "build": "npm run build:html && webpack --progress --colors",
     "dev": "npm run clean && npm run watch & npm run dev:html & npm run bs",
     "watch": "webpack -d --progress --colors --watch",
-    "bs": "browser-sync start --server --serveStatic './dist' --files './dist/**/*.html, ./dist/js/**/*.js'",
+    "bs": "browser-sync start --server --serveStatic './dist' --files './dist/**/*.html, ./dist/css/**/*.css, ./dist/js/**/*.js'",
     "build:html": "node metalsmith.js",
     "dev:html": "node metalsmith.js"
   },
